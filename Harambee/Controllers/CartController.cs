@@ -56,7 +56,7 @@ namespace Harambee.Controllers
             return await _cartRepo.GetAllBundles();
         }
 
-        [HttpGet]
+        [HttpPost]
         [AllowAnonymous]
         [Route("api/Cart/AddToBasket")]
         public Basket AddToBasket(int customerID, int productID)
